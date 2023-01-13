@@ -1,0 +1,2 @@
+### Modulo 4 <h3>
+Nesse módulo vamos ver **Python**, **Padrões de Projeto**, **Redes**, **Raspagem de Dados**, **Algoritmos**, **Estruturas de Dados I** (Arrays, Listas, Filas e Pilhas) e **Estruturas de Dados II** (Hashmaps e Sets).

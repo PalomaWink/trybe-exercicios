@@ -1,0 +1,2 @@
+### Módulo 1 <h3>
+Nesse módulo iremos aprender **Unix**, **Shell**, **Git**, **GitHub**, introdução à **HTML & CSS** (Forms, Flexbox e Responsivo), introdução a **JS** (DOM, eventos e Web Storage), **ES6** (Higher Order Functions) e **Testes Unitários**.

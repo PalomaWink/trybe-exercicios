@@ -2,6 +2,11 @@ div:hover {
     border: 5px solid coral;
 }
 
+
+h3 {
+    font: Arial ;
+}
+
 div:nth-child(3){
     background-color: darkmagenta;
 }
@@ -12,6 +17,7 @@ div:nth-child(4){
 
 div:nth-child(5){
     background-color: plum;
+    font-size: larger;
 }
 
 div:nth-child(6){

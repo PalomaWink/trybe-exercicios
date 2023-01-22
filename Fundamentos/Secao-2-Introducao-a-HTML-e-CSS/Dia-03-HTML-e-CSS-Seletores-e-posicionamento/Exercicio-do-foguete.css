@@ -9,7 +9,7 @@ h3 {
 
 div:nth-child(3){
     background-color: darkmagenta;
-    font-style: italic;
+    
 }
 
 div:nth-child(4){
@@ -19,7 +19,7 @@ div:nth-child(4){
 div:nth-child(5){
     background-color: plum;
     font-size: larger;
-    font-style: italic;
+    
 }
 
 div:nth-child(6){
@@ -28,5 +28,9 @@ div:nth-child(6){
 
 div:nth-child(7){
     background-color: chocolate;
+    
+}
+
+div:nth-of-type(odd){
     font-style: italic;
 }

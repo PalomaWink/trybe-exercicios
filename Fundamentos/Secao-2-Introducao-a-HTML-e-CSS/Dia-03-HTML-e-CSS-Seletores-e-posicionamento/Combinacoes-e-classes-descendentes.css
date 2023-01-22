@@ -33,3 +33,27 @@ li {
     background-color: pink;
 }
 
+.links li:nth-child(1):hover{
+    background-color: orange;
+    font-weight: bolder;
+}
+
+.links li:nth-child(2):hover{
+    background-color: greenyellow;
+    font-weight: bolder;
+}
+
+.links li:nth-child(3):hover{
+    background-color: black;
+    font-weight: bolder;
+}
+
+.links li:nth-child(4):hover{
+    background-color: yellow;
+    font-weight: bolder;
+}
+
+.links li:nth-child(5):hover{
+    background-color: green;
+    font-weight: bolder;
+}

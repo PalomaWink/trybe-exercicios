@@ -2,9 +2,9 @@
 Para os ângulos serem de um triângulo válido, a soma dos três deve ser 180 graus.
 Um ângulo será considerado inválido se não tiver um valor positivo.*/
 
-const ladoA = 90;
+const ladoA = 60;
 const ladoB = 60;
-const ladoC = 100;
+const ladoC = 60;
 
 if ((ladoA + ladoB + ladoC) == 180){
     console.log (true);

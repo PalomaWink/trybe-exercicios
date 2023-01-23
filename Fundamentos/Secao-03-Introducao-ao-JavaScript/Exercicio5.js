@@ -5,4 +5,24 @@ Se a peça passada for inválida, o código deve retornar uma mensagem de erro.
 Exemplo: bishop (bispo) -> diagonals (diagonais)*/
 
 let peca1 = 'Dama';
-let peca2 = 'Cavalo'
+
+switch (peca1.toLowerCase()){
+    case 'dama':
+        console.log ('Movimenta na horizontal, vertical ou diagonal, sem limite de casas.');
+    break;
+    case 'torre':
+        console.log ('Movimento na horizontal ou vertical, sem limites de casas.');
+    break;
+    case 'cavalo':
+        console.log ('Movimento em L.');
+    break;
+    case 'bispo':
+        console.log ('Movimento na diagonal sem limites de casas.');
+    break;
+    case 'rei':
+        console.log ('Movimenta uma casa ao seu redor.');
+    break;
+    case 'peão':
+        console.log ('Primeiro movimento até duas casas para frente, depois apenas um para frente ou diagonal (apenas para matar peças).');
+    break;
+}

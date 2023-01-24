@@ -25,4 +25,6 @@ switch (peca1.toLowerCase()){
     case 'peão':
         console.log ('Primeiro movimento até duas casas para frente, depois apenas um para frente ou diagonal (apenas para matar peças).');
     break;
+    default:
+        console.log ('Peça inválida');
 }

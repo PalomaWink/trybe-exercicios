@@ -25,3 +25,34 @@ R$ 142,80 parcela a se deduzir do imposto.
 Fazendo a conta, temos: (7,5% de R$ 2.670,00) - R$ 142,80 = R$ 57,45
 O último cálculo para conseguir o salário líquido é R$ 2.670,00 - R$ 57,45 (salário-base - valor IR) = R$ 2.612,55.
 Resultado: R$ 2.612,55.*/
+
+let salarioBruto = 5000;
+let salarioLiquido;
+
+if (salarioBruto <= 1556.94){
+    salarioLiquido = salarioBruto - (salarioBruto * 0.08);
+}
+else if (salarioBruto >= 1556.95 && salarioBruto <= 2594.92){
+    salarioLiquido = salarioBruto - (salarioBruto * 0.09);
+}
+else if (salarioBruto >= 2594.93 && salarioBruto <= 5189.82){
+    salarioLiquido = salarioBruto - (salarioBruto * 0.11);
+}
+else {
+    salarioLiquido = salarioBruto - 570.88;
+}
+
+if (salarioBruto >= 1903.99 && salarioBruto <= 2826.65){
+    salarioLiquido = salarioLiquido - ((salarioBruto * 0.075) - 142.80);
+}
+else if (salarioBruto >= 2826.66 && salarioBruto <= 3751.05){
+    salarioLiquido = salarioLiquido - ((salarioBruto * 0.15) - 354.80);
+}
+else if (salarioBruto >= 3751.06 && salarioBruto <= 4664.68){
+    salarioLiquido = salarioLiquido - ((salarioBruto * 0.225) - 636.13);
+}
+else {
+    salarioLiquido = salarioLiquido - ((salarioBruto * 0.275) - 869.36);
+}
+
+console.log (salarioLiquido);

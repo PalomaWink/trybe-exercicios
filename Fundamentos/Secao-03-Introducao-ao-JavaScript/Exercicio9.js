@@ -7,3 +7,12 @@ O lucro de um produto é o resultado da subtração do valor de venda pelo custo
 
 valorCustoTotal = valorCusto + impostoSobreOCusto;
 lucro = valorVenda - valorCustoTotal (lucro de um produto); */
+
+const custoProduto = (100 * 1.2);
+const valorVenda = -260;
+
+if ((valorVenda - custoProduto) <= 0){
+    console.log ('Valores negativos!')
+}else{
+    console.log('O lucro na venda de 1000 unidades foi de: ', (valorVenda - custoProduto) * 1000);
+}

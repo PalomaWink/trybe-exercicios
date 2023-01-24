@@ -72,3 +72,5 @@ if (numImpar.length === 0) {
 } else {
     console.log("Valores ímpares: " + numImpar);
 }
+
+//7

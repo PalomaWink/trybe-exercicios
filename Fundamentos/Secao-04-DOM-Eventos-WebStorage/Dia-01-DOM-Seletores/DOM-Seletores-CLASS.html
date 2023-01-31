@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com class</title>
+</head>
+<body>
+    <header>
+        <h2 class="title">Título</h2>
+        <p class="paragraph">Dê uma cor para este parágrafo!</p>
+        <h4 class="title">Subtítulo</h4>
+        <p class="paragraph">Segundo parágrafo!</p>
+      </header>
+      <script>
+        const paragraph = document.getElementById("paragraph");
+        paragraph.style.color = "red";
+        document.getElementsByClassName('title')[0].innerText
+      </script>
+</body>
+</html>
+
+<!-- Adicione uma classe igual para os dois parágrafos;
+Recupere os seus parágrafos via código JavaScript, usando a função getElementsByClassName;
+Altere algum estilo do primeiro deles;
+Recupere o subtítulo e altere a cor dele usando a função getElementsByTagName. -->

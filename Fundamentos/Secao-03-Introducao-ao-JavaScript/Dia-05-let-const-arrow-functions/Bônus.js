@@ -23,3 +23,10 @@ Minhas três principais habilidades são:
 JavaScript
 HTML
 CSS */
+
+function substituaX(nome) {
+    const frase = 'Tryber x aqui!';
+    return frase.replace('x', nome);
+};
+console.log(substituaX('Paloma'));
+

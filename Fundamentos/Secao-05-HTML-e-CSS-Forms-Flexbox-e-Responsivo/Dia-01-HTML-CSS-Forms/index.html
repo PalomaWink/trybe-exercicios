@@ -16,9 +16,16 @@ Adicione o atributo autofocus para o campo de email. -->
 <body>
     <form action="" method="get">
         <p>Email</p>
-        <input type="email" name="email" id="email">
+        <input type="email" placeholder="Digite seu e-mail" id="email" required autocomplete="off" autofocus>
         <p>Senha</p>
-        <input type="password" name="senha" id="password">
+        <input type="password" placeholder="Digite dua senha" id="password" required>
+        <br>
+        <label for="lembrete"> Lembre-me
+            <input type="checkbox" name="" id="lembrete"> 
+        </label>
+        <br>
+        <br>
+        <input type="button" value="Enter">
     </form>
 </body>
 </html>

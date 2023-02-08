@@ -28,5 +28,10 @@ function substituaX(nome) {
     const frase = 'Tryber x aqui!';
     return frase.replace('x', nome);
 };
-console.log(substituaX('Paloma'));
 
+function minhasSkills(retorno) {
+    const skills = ['JavaScript', 'HTML', 'CSS'];
+    return `${retorno} minhas três principais habilidades são: ${skills}`;
+}
+
+console.log(minhasSkills(substituaX('Paloma')));

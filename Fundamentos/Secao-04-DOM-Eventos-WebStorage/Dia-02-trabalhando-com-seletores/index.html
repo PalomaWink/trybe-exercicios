@@ -47,7 +47,7 @@
         background-color: blue;
         width: 60%;
         margin-left: auto;
-        margin-right: 0;
+        margin-right: auto;
       }
 
       .main-content .description {
@@ -59,6 +59,7 @@
     <script>
       const pai = document.getElementsByTagName('body')[0];
       const titulo = document.createElement('h1');
+      titulo.className = 'title';
       titulo.innerText = 'TrybeTrip - Agência de Viagens';
       pai.appendChild(titulo);
 
@@ -87,12 +88,28 @@
       img.src = 'https://picsum.photos/200';
       selecao2.appendChild(img);
 
-      const arrayNum = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      const arrayNum = ['Um', 'Dois', 'Tres', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
       const lista = document.createElement('ul');
-      for(let i = 0; i < lista.length; i += 1){
-        let num = lista[i];
-        let lista2 = document.createElement('li');
+      selecao3.appendChild(lista);
+      for(let num in arrayNum){
+        const elemento = document.createElement('li');
+        elemento.innerHTML = arrayNum[num];
+        lista.appendChild(elemento);
+      };
+
+      for (let i = 1; i <= 3; i += 1) {
+        const tagH3 = document.createElement('h3');
+        tagH3.className = 'description';
+        tagH3.innerText = 'Algum Texto';
+        principal.appendChild(tagH3);
       }
+
+      const color = document.getElementsByClassName('center-content')[0];
+      color.parentNode.style.backgroundColor = 'green';
+
+      const ul = document.getElementsByTagName('ul')[0];
+      ul.lastChild.remove();
+      ul.lastChild.remove();
 
     </script>
   </body>

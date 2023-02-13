@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const pai = document.getElementsByTagName('body')[0];
+      const titulo = document.createElement('h1');
+      titulo.className = 'title';
+      titulo.innerText = 'TrybeTrip - Agência de Viagens';
+      pai.appendChild(titulo);
+
+      const principal = document.createElement('main');
+      principal.className = 'main-content';
+      pai.appendChild(principal);
+
+      const selecao = document.createElement('section');
+      selecao.className = 'center-content';
+      principal.appendChild(selecao);
+
+      const paragrafo = document.createElement('p');
+      paragrafo.innerText = 'Adicionei algum texto'
+      selecao.appendChild(paragrafo);
+
+      const selecao2 = document.createElement('section');
+      selecao2.className = 'left-content';
+      principal.appendChild(selecao2);
+
+      const selecao3 = document.createElement('section');
+      selecao3.className = 'rigth-content';
+      principal.appendChild(selecao3);
+
+      const img = document.createElement('img');
+      img.className = 'small-image';
+      img.src = 'https://picsum.photos/200';
+      selecao2.appendChild(img);
+
+      const arrayNum = ['Um', 'Dois', 'Tres', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+      const lista = document.createElement('ul');
+      selecao3.appendChild(lista);
+      for(let num in arrayNum){
+        const elemento = document.createElement('li');
+        elemento.innerHTML = arrayNum[num];
+        lista.appendChild(elemento);
+      };
+
+      for (let i = 1; i <= 3; i += 1) {
+        const tagH3 = document.createElement('h3');
+        tagH3.className = 'description';
+        tagH3.innerText = 'Algum Texto';
+        principal.appendChild(tagH3);
+      }
+
+      const color = document.getElementsByClassName('center-content')[0];
+      color.parentNode.style.backgroundColor = 'green';
+
+      const ul = document.getElementsByTagName('ul')[0];
+      ul.lastChild.remove();
+      ul.lastChild.remove();
+
+    </script>
+  </body>
+</html>

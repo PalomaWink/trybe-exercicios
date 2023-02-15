@@ -1,0 +1,66 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  @media screen and (max-width: 600px) {
+    .container {
+        font-family: 'Special Elite', cursive;
+        margin: 15px
+    }
+    header p {
+        text-align: center;
+        font-size: 20pt;
+    }
+    header ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 15pt;
+    }
+    .aside-one ul {
+        font-size: 13pt;
+    }
+    .aside-one h2 {
+        text-decoration: underline;
+        font-size: 15pt;
+    }
+    .aside-two ul {
+        font-size: 13pt;
+    }
+    .aside-two h2 {
+        text-decoration: underline;
+        font-size: 15pt;
+    }
+    .main-content p {
+        text-align: justify;
+    }
+    .main-content h1 {
+        text-align: center;
+        font-size: 20pt;
+        text-decoration: underline;
+    }
+    footer h3 {
+        font-size: 12pt;
+        text-align: center;
+    }
+    footer p {
+        font-size: 10pt;
+        text-align: center;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .container {
+        font-family: 'Special Elite', cursive;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .container {
+        font-family: 'Special Elite', cursive;
+    }
+  }

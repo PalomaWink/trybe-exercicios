@@ -68,3 +68,16 @@ const authorBornIn1947 = () => {
     const result = books.find((expectedResult) => books.author === expectedResult)
     return result;
 }
+
+const expectedResult2 = 'Duna';
+const smallerName = () => {
+  let nameBook = ''
+  books.forEach((element) => {
+    if (element.name === expectedResult2) {
+      nameBook = element.name
+    }
+  })
+  return nameBook;
+}
+
+console.log(smallerName());

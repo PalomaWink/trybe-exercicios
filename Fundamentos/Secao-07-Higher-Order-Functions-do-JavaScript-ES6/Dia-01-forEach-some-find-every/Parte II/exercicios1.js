@@ -80,4 +80,32 @@ const smallerName = () => {
   return nameBook;
 }
 
-console.log(smallerName());
+const getNamedBook = () => {
+  let nameBook = ''
+  books.find((elemento) => {
+    if (elemento.name.length === 26) {
+      nameBook = elemento.name
+    }
+  })
+  return nameBook;
+}
+
+const expectedResult3 = false;
+function everyoneWasBornOnSecXX() {
+  let born;
+  books.find((element) => {
+    if (element.author.birthYear >= 1901 && element.author.birthYear <= 2000) {
+      born = element.author.birthYear
+    } else {
+      born = expectedResult3;
+    }
+  })
+  return born;
+}
+
+const someBookWasReleaseOnThe80s = () => {
+  let book = books.some((element) => element.releaseYear >= 1980 && element.releaseYear <= 1989)
+  return book;
+}
+
+console.log(someBookWasReleaseOnThe80s());

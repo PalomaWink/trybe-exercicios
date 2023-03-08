@@ -31,7 +31,11 @@ const mage = {
 
   const damageDragon = () => dragon.damage = Math.floor(Math.random(15) * dragon.strength);
 
-  const damageWarrior = () => warrior.damage = Math.floor(Math.random(warrior.strength) * warrior.weaponDmg);
+  const damageWarrior = () => {
+    let minDmg = warrior.strength
+    let maxDmg = warrior.strength * warrior.weaponDmg
+    warrior.damage = Math.floor(Math.random() * (minDmg * maxDmg));
+  }
 
   const mageTurn = () => {
     if (mage.mana < 15) {
@@ -45,9 +49,17 @@ const mage = {
     return turnMage;
   };
 
-  console.log(damageDragon());
-
-  console.log(damageWarrior());
+  const gameActions = {
+    warriorTurn: (damageWarrior) => {
+      const warriorAtack = damageWarrior(warrior);
+      dragon.healthPoints -= warriorAtack;
+      warrior.damage = warriorAtack;
+    }
+  };
   
-  console.log(mageTurn());
+ console.log(gameActions.warriorTurn(damageWarrior));
+
+
+  module.export = {mage, warrior, dragon, mageTurn};
+  module.export = damageDragon, damageWarrior;
   

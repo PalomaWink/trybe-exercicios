@@ -1,0 +1,11 @@
+{
+  "name": "gerador-de-senhas",
+  "version": "1.0.0",
+  "description": "Exercicios do dia 01 de front-end, aprendendo a criar um ambiente de desenvolvimento",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

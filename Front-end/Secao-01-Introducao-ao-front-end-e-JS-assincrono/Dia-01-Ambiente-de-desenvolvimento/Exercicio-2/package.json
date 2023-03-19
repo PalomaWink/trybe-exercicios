@@ -1,0 +1,16 @@
+{
+  "name": "exercicio-2",
+  "version": "1.0.0",
+  "description": "Segundo exercicio sobre ambiente de desenvolvimento",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --open"
+  },
+  "author": "Paloma Wink",
+  "license": "ISC",
+  "dependencies": {
+    "@trybe/eslint-config-frontend": "^1.8.3",
+    "validator": "^13.9.0",
+    "vite": "^4.2.0"
+  }
+}

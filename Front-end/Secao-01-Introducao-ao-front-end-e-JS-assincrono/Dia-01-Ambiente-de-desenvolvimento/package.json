@@ -4,12 +4,16 @@
   "description": "Exercicios do dia 01 de front-end, aprendendo a criar um ambiente de desenvolvimento",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite --open"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "nanoid": "^4.0.1",
     "vite": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.36.0"
   }
 }

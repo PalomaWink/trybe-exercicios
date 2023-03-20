@@ -1,0 +1,16 @@
+{
+  "name": "dia-02-js-assincrono-promises-e-fetch",
+  "version": "1.0.0",
+  "description": "Exercicios sobre promises e fetch",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --open",
+    "lint": "eslint ./src"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@trybe/eslint-config-frontend": "^1.8.3",
+    "vite": "^4.2.0"
+  }
+}

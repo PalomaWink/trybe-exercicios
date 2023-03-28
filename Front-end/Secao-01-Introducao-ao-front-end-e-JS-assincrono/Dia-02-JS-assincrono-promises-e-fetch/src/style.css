@@ -1,0 +1,40 @@
+.container {
+    background-color: #FFEBCC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh
+}
+
+h1 {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 45pt;
+}
+
+#image {
+    width: 300px;
+    border-radius: 10px;
+}
+
+#name {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30pt;
+    text-align: center;
+    color: black;
+}
+
+#button {
+    background-color: #9d1fae;
+    border: 0 none;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}

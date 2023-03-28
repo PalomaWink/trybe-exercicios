@@ -1,0 +1,27 @@
+* {
+  padding-left: 10px;
+}
+
+.nome {
+  font-family: cursive;
+  color: crimson;
+  text-decoration: underline;
+  font-size: 50pt;
+}
+
+.sobre {
+  font-family: fantasy;
+  font-size: 20pt;
+}
+
+.hab {
+  font-family: cursive;
+  color: crimson;
+  text-decoration: underline;
+  font-size: 50pt;
+}
+
+.list {
+  font-family: fantasy;
+  font-size: 20pt;
+}
